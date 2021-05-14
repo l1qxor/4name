@@ -1,15 +1,15 @@
 #!/bin/bash
 
-if [ -x /bin/fish ]
+if [ -x $PREFIX/bin/fish ]
 then
 echo -e "\e[34;1mMoviendo archivos de configuracion\e[35;1m :)\e[0m"
-rm /etc/fish/config.fish
-mv fish-config/* /etc/fish
+rm $PREFIX/etc/fish/config.fish
+mv fish-config/* $PREFIX/etc/fish
 echo -en "\e[34;1mDesea Instalar \e[0m4name\e[34;1m en el arranque de su Terminal ?\e[0m "; read sn
 if [[ $sn == "si"  ]]
 then
-rm /etc/bash.bashrc
-mv bash-config/* /etc/
+rm $PREFIX/etc/bash.bashrc
+mv bash-config/* $PREFIX/etc/
 elif [[ $sn == "no" ]]
 then
 echo -en

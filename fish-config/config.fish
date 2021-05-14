@@ -18,7 +18,7 @@ echo "Termux"
 end
 
 function q
-bash /etc/fish/4name.sh $argv
+bash $PREFIX/etc/fish/4name.sh $argv
 end
 
 
