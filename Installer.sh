@@ -4,6 +4,7 @@ if [ -x $PREFIX/bin/fish ]
 then
 echo -e "\e[34;1mMoviendo archivos de configuracion\e[35;1m :)\e[0m"
 rm $PREFIX/etc/fish/config.fish
+mv bash-config/welcome.sh $PREFIX/etc/fish
 mv fish-config/* $PREFIX/etc/fish
 echo -en "\e[34;1mDesea Instalar \e[0m4name\e[34;1m en el arranque de su Terminal ?\e[0m "; read sn
 if [[ $sn == "si"  ]]

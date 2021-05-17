@@ -17,10 +17,11 @@ echo
 }
 
 
-
 if [[ $q == "info" ]]
 then
 info
 else
-echo -e "\e[34;1m Q \e[0;2minfo\e[0m"
+echo
+echo -e "\e[34;1mQ\e[0;1m info \e[0m\e[31;1m--\e[0;1m informacion sobre la terminal y sistema.\e[0m"
+echo
 fi
