@@ -13,18 +13,18 @@
 #   ...
 # end
 
+
+
 function fish_title
 echo "Termux"
 end
 
 function q
-bash $PREFIX/etc/fish/4name.sh $argv
+bash /etc/fish/4name.sh $argv
 end
-
 
 function fish_prompt
-echo -e "\e[1;34m4N\e[0;1;36m >\e[0m "
+echo -e "\e[34;1m$PWD\e[0m@\e[31;1m$USER\e[0;34m > "
 end
-
 
 set fish_greeting ""
